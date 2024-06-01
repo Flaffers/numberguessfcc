@@ -1,0 +1,385 @@
+commit ead0e68d20f45a8be269d24142f58c5c0957a3a0
+Author: Flaffers F <charliepfaff@gmail.com>
+Date:   Sat Jun 1 22:44:28 2024 +0000
+
+    fix: removed another random else which also seems to have been tripping up the 'print correct win message' test
+
+commit 84c5ac1a094355bd2955ebe39b8861873f51d73a
+Author: Flaffers F <charliepfaff@gmail.com>
+Date:   Sat Jun 1 22:42:33 2024 +0000
+
+    fix: removed else keyword because all in it had been commented out
+
+commit 60a77bfbc616a0e47f18888cf2c7b0173dd85378
+Author: Flaffers F <charliepfaff@gmail.com>
+Date:   Sat Jun 1 22:38:34 2024 +0000
+
+    chore: removed debug messages which seems to have broekn enverything
+
+commit bcdc3456286e8ab702cdcf72147081eb5775559c
+Author: Flaffers F <charliepfaff@gmail.com>
+Date:   Sat Jun 1 22:35:30 2024 +0000
+
+    fix: parens in new user insert
+
+commit ac2a19ac743dbe083723e7063c3a2a2176210082
+Author: Flaffers F <charliepfaff@gmail.com>
+Date:   Sat Jun 1 22:31:04 2024 +0000
+
+    feat: write to database based on if new or ext. user
+
+commit 0e1b553192e6498af2799688ee45994bd31c6176
+Author: Flaffers F <charliepfaff@gmail.com>
+Date:   Sat Jun 1 22:16:38 2024 +0000
+
+    refactor: removed while loop to negate subshell shenanigans
+
+commit b1d6f05c6a90cc0fb780db24f5cd833ca4cd098e
+Author: Flaffers F <charliepfaff@gmail.com>
+Date:   Sat Jun 1 21:40:42 2024 +0000
+
+    refactor: moved PLAY_GAME code into MAIN because we just love big long functions
+
+commit d99d86f402d655a199fee6a203d9897b13032dde
+Author: Flaffers F <charliepfaff@gmail.com>
+Date:   Sat Jun 1 21:39:13 2024 +0000
+
+    refactor: moved username-handling code into MAIN because compartmentalization is for nerds
+
+commit 2572a6585d4e6b1263d32bb6ea0ec9bbb540dc59
+Author: Flaffers F <charliepfaff@gmail.com>
+Date:   Sat Jun 1 21:35:13 2024 +0000
+
+    feat: setup for function to handle if a winning game is user's best game
+
+commit c254ebe71cb7b7a114a8477691fd6ce67ba5284d
+Author: Flaffers F <charliepfaff@gmail.com>
+Date:   Sat Jun 1 02:26:05 2024 +0000
+
+    feat: fuller win message including variables
+
+commit 13e3e6bdd45b5605ab85c8293a436141d2924e51
+Merge: 73762d0 18ed6b8
+Author: Flaffers F <charliepfaff@gmail.com>
+Date:   Sat Jun 1 02:10:02 2024 +0000
+
+    fix: Merge branch 'feat/increment-guesses' into refactor/handle-guess-into-game
+
+commit 18ed6b82435027b8beb5393ac54e41932d30f78c
+Author: Flaffers F <charliepfaff@gmail.com>
+Date:   Sat Jun 1 01:51:43 2024 +0000
+
+    feat: valid guesses increment current_guess var before echoing feedback
+
+commit 73762d023d230a17332c5483bdd98c5877a9a9ac
+Author: Flaffers F <charliepfaff@gmail.com>
+Date:   Sat Jun 1 01:43:51 2024 +0000
+
+    refactor: removed commented handle_guess code
+
+commit 9d17726c2789f2af285e5ae943f94dcabda7bc43
+Author: Flaffers F <charliepfaff@gmail.com>
+Date:   Sat Jun 1 01:43:05 2024 +0000
+
+    fix: bling before variable
+
+commit a963acd791bc0b9e4682143ca4cbbf3c8febcfa9
+Author: Flaffers F <charliepfaff@gmail.com>
+Date:   Sat Jun 1 01:41:01 2024 +0000
+
+    refactor: handle_guess back into play_game
+
+commit 19e5668f4e0c32b80828380b13d641e00bb09a61
+Author: Flaffers F <charliepfaff@gmail.com>
+Date:   Fri May 31 21:59:33 2024 +0000
+
+    fix: -eq in the actual implemented until loop, and moved first read of current_guess back into the loop
+
+commit aa1799d1ccf226a9fd9f27c7cff4a3555edaecdc
+Author: Flaffers F <charliepfaff@gmail.com>
+Date:   Fri May 31 21:56:23 2024 +0000
+
+    fix: -eq (integer) instead of == (string)
+
+commit a2b5bba994e814b465407836bd64d4cca80b3c7e
+Author: Flaffers F <charliepfaff@gmail.com>
+Date:   Fri May 31 21:42:27 2024 +0000
+
+    test: debug lines in handle_guess()
+
+commit cd39a61de1edc1dbb4d758077f0d387476468494
+Author: Flaffers F <charliepfaff@gmail.com>
+Date:   Fri May 31 21:37:40 2024 +0000
+
+    test: taking things out to find issue
+
+commit 05e7c99bc9f653d338485974b41ccb992d7cfb31
+Author: Flaffers F <charliepfaff@gmail.com>
+Date:   Fri May 31 21:31:02 2024 +0000
+
+    fix: add a CURRENT_GUESS read before until loop otherwise we dont even get to the loop
+
+commit 46310b1415fca26664a1164c810c43ed4720850a
+Author: Flaffers F <charliepfaff@gmail.com>
+Date:   Fri May 31 21:25:40 2024 +0000
+
+    feat: est. guess counter, move handle_guess inside until, pass guess count to it
+
+commit 5071e5b62e3e6fcc9b6f0d0e0ee50cd5072dd440
+Author: Flaffers F <charliepfaff@gmail.com>
+Date:   Fri May 31 21:23:43 2024 +0000
+
+    refactor: var read into until loop, though prompt echo stays outside
+
+commit 1195835489f4c8f512e1567430c9a0f4b4a8de49
+Author: Flaffers F <charliepfaff@gmail.com>
+Date:   Fri May 31 21:22:01 2024 +0000
+
+    feat: created until loop and moved first guess read
+
+commit 01b9ef555e1e74b372bcfc962c6bbf24bad34397
+Author: Flaffers F <charliepfaff@gmail.com>
+Date:   Fri May 31 21:14:21 2024 +0000
+
+    feat: pseudocode for main until
+
+commit 09edbdab1f1217ce453d7d1a54de244e6b148806
+Author: Flaffers F <charliepfaff@gmail.com>
+Date:   Fri May 31 21:00:16 2024 +0000
+
+    fix: chmod +x and binbash var
+
+commit ddd8b61a55d672cafe3b0fff2da52f020a47713e
+Author: Flaffers F <charliepfaff@gmail.com>
+Date:   Fri May 31 20:58:59 2024 +0000
+
+    test: created file to test handle guess
+
+commit 2a38e94c4f7f2d5dbbf4af0ac84af236d36f41d1
+Author: Flaffers F <charliepfaff@gmail.com>
+Date:   Fri May 31 20:30:51 2024 +0000
+
+    feat: implemented desired low/high feedback language
+
+commit 28184421e96b6328e41bc93e4313cf7f744ead04
+Author: Flaffers F <charliepfaff@gmail.com>
+Date:   Fri May 31 20:28:36 2024 +0000
+
+    fix: syntax in if/then/elif/fi
+
+commit 168f923b5704ebde7db07d3c8a4f86b57cda5e08
+Author: Flaffers F <charliepfaff@gmail.com>
+Date:   Fri May 31 20:26:01 2024 +0000
+
+    refactor: create and populate HANDLE_GUESS()
+
+commit 1b601bfc1fa71316ecb7d6cbadd178408e70589b
+Author: Flaffers F <charliepfaff@gmail.com>
+Date:   Fri May 31 19:27:55 2024 +0000
+
+    refactor: move existing guessing code into PLAY_GAME(), add call to PLAY_GAME() to MAIN()
+
+commit 1165436d7620977a974544d18f230eaa1fe9a999
+Author: Flaffers F <charliepfaff@gmail.com>
+Date:   Fri May 31 19:26:14 2024 +0000
+
+    refactor: set up PLAY_GAME() which will first call GENERATE_RAND_NUM()
+
+commit 44e6538921ab017665d33a501220a0548d291d1f
+Author: Flaffers F <charliepfaff@gmail.com>
+Date:   Fri May 31 19:22:38 2024 +0000
+
+    chore: more indent adjustment
+
+commit 6eac55d2764b4755ffdcbc5359ad35502701083d
+Author: Flaffers F <charliepfaff@gmail.com>
+Date:   Fri May 31 19:21:36 2024 +0000
+
+    refactor: call WELCOME_USER from MAIN; adjusted indents
+
+commit 3766b3a376525f4eee6a02be3055331763c3b081
+Author: Flaffers F <charliepfaff@gmail.com>
+Date:   Fri May 31 19:18:52 2024 +0000
+
+    refactor: moved code into WELCOME_USER(), adjusted indentation, if/fis
+
+commit 07ff35757818f9deedf8af4692fa711d8d16e275
+Author: Flaffers F <charliepfaff@gmail.com>
+Date:   Fri May 31 19:13:38 2024 +0000
+
+    refactor: created WELCOME_USER function to place code in
+
+commit 2fd04f776ba2dfd6c69394bf4ba1b01ddde53ee4
+Author: Flaffers F <charliepfaff@gmail.com>
+Date:   Fri May 31 19:10:15 2024 +0000
+
+    refactor: GENERATE_RAND_NUM at start of MAIN
+
+commit d6f34e76c164a9e8e998fa4eed3fdf87bd520013
+Author: Flaffers F <charliepfaff@gmail.com>
+Date:   Fri May 31 19:05:03 2024 +0000
+
+    feat: detect non-integer guesses
+
+commit 1be71757cc0af1f01f20d2747668e75c73826a4b
+Author: Flaffers F <charliepfaff@gmail.com>
+Date:   Fri May 31 18:58:44 2024 +0000
+
+    feat: prompt CURRENT_GUESS variable
+
+commit 64c4f0067d327e607aa3fd9393f11072beb81de0
+Author: Flaffers F <charliepfaff@gmail.com>
+Date:   Fri May 31 18:54:39 2024 +0000
+
+    feat: welcome back statement; removed test echos
+
+commit afc1be0b9c2f667898652454fb4512a0310068d8
+Author: Flaffers F <charliepfaff@gmail.com>
+Date:   Fri May 31 18:44:26 2024 +0000
+
+    feat: use IFS to split sql result into GAMES_PLAYED and BEST_GAME
+
+commit c834ff722054c684876bbb7e87978ab2c3e2cbe7
+Author: Flaffers F <charliepfaff@gmail.com>
+Date:   Fri May 31 18:11:33 2024 +0000
+
+    test: echo statements
+
+commit 729b1f536694048d461c7cd418473d5ceeca0b69
+Author: Flaffers F <charliepfaff@gmail.com>
+Date:   Fri May 31 18:08:21 2024 +0000
+
+    chore: removed unnecessary test echos
+
+commit e05a2bf415d86a41cb8fb28b6ac12b0eaeb143c2
+Author: Flaffers F <charliepfaff@gmail.com>
+Date:   Fri May 31 18:04:06 2024 +0000
+
+    fix: don't need username from SQL and feat: read sql result to variables
+
+commit 1a2dbcbc1115881ec66d83110a730e34e7c8d431
+Author: Flaffers F <charliepfaff@gmail.com>
+Date:   Fri May 31 17:57:09 2024 +0000
+
+    fix: comma in welcome message
+
+commit 904ff3d31b11717bf63640fec81499c372be6a92
+Author: Flaffers F <charliepfaff@gmail.com>
+Date:   Fri May 31 17:55:08 2024 +0000
+
+    feat: if USERNAME not found, return new user welcome message
+
+commit c7335b9392b04e383de484d7b868fedf5a1b538e
+Author: Flaffers F <charliepfaff@gmail.com>
+Date:   Fri May 31 17:49:47 2024 +0000
+
+    fix: cast  to string in SQL query
+
+commit 71a4af84d25ccfcf3c3a6bb1c26770993e7574d8
+Author: Flaffers F <charliepfaff@gmail.com>
+Date:   Fri May 31 17:48:41 2024 +0000
+
+    fix: PSQL variable syntax in no-align (hypen)
+
+commit c8e58747f5f95ccb436c42ec3fa8fd2d8473799a
+Author: Flaffers F <charliepfaff@gmail.com>
+Date:   Thu May 30 17:56:48 2024 +0000
+
+    feat: query database for user history
+
+commit 47ae16ba6e0b1b3a93d420e28f10dda095fdaf31
+Author: Flaffers F <charliepfaff@gmail.com>
+Date:   Thu May 30 17:29:39 2024 +0000
+
+    fix: end brace back to end of main function
+
+commit 984d57e541d248a2ea07ba3043bea5605c1288d8
+Author: Flaffers F <charliepfaff@gmail.com>
+Date:   Thu May 30 17:29:09 2024 +0000
+
+    fix: fi back in actually. and moved end brace
+
+commit 698075691bd680c201afd51a6bf125489568938e
+Author: Flaffers F <charliepfaff@gmail.com>
+Date:   Thu May 30 17:26:32 2024 +0000
+
+    fix: first gotta get rid of else/fi screwing things up
+
+commit e95f5a30325d77e39c1e27f62a04867dbd93d77d
+Author: Flaffers F <charliepfaff@gmail.com>
+Date:   Thu May 30 17:09:25 2024 +0000
+
+    feat: create else statement, move pseucode inside
+
+commit 13a06fdd5e709306f7f8de783b5acc025256e95d
+Author: Flaffers F <charliepfaff@gmail.com>
+Date:   Wed May 29 21:26:52 2024 +0000
+
+    fix: corrected database name in PSQL variable
+
+commit 4b25f78375d7fbeb24c8d9658aa89ce87972eef9
+Author: Flaffers F <charliepfaff@gmail.com>
+Date:   Wed May 29 21:24:55 2024 +0000
+
+    feat: create PSQL variable
+
+commit a68ed42eff964866183a1efad5a6cbf2cb93d864
+Author: Flaffers F <charliepfaff@gmail.com>
+Date:   Wed May 29 21:11:36 2024 +0000
+
+    feat: disable tests of rand num function
+
+commit d2767b153b600c522b18261321bf6960f361ca48
+Author: Flaffers F <charliepfaff@gmail.com>
+Date:   Wed May 29 21:08:06 2024 +0000
+
+    fix: adjust rand num function for easier testing. also, newline at end of file
+
+commit 7c2237d75a91b9cba9a66934e5c808e4948f69c6
+Author: Flaffers F <charliepfaff@gmail.com>
+Date:   Wed May 29 21:03:19 2024 +0000
+
+    test: setup to test GENERATE_RAND_NUM function
+
+commit 4947baab151bd0d4a28dfb6de251f614c7b5cc97
+Author: Flaffers F <charliepfaff@gmail.com>
+Date:   Wed May 29 20:57:14 2024 +0000
+
+    feat: created GENERATE_RAND_NUM() to generate rand num betw 1 and 1000 inclusive
+
+commit 1c690498be19fabd90468c90a45dc2d63420a74c
+Merge: f747cbf 385f70f
+Author: Flaffers F <charliepfaff@gmail.com>
+Date:   Tue May 28 18:49:22 2024 +0000
+
+    chore: merged create-wrapper-function into take-valid-username
+
+commit 385f70f457bd77038aab103b777bd2bcf1d7f483
+Author: Flaffers F <charliepfaff@gmail.com>
+Date:   Tue May 28 18:35:46 2024 +0000
+
+    chore:created MAIN() wrapper function and call MAIN from script
+
+commit f747cbf2cfc364a27dfc6c1c8e238fe288f02cd3
+Author: Flaffers F <charliepfaff@gmail.com>
+Date:   Tue May 28 18:28:53 2024 +0000
+
+    feat: give feedback if username too long
+
+commit 0e5ba8b4c38fb66b5c494a74eb3b5beb6e4d8817
+Author: Flaffers F <charliepfaff@gmail.com>
+Date:   Tue May 28 18:21:25 2024 +0000
+
+    feat: get USERNAME as input
+
+commit 4555130192398e923fbe3e3dddd819338951edf6
+Author: Flaffers F <charliepfaff@gmail.com>
+Date:   Thu May 23 20:59:16 2024 +0000
+
+    chore: initial, probably incorrect pseudocode
+
+commit f9e6e106fa5d217d037263bd17091a297b40acca
+Author: Flaffers F <charliepfaff@gmail.com>
+Date:   Thu May 23 20:40:27 2024 +0000
+
+    Initial commit
